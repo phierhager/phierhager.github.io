@@ -7,7 +7,7 @@ subtitle: Technical University of Munich
 profile:
   align: right
   image: profile_picture.jpeg
-  image_circular: false
+  image_circular: true
   more_info: >
 
 news: true

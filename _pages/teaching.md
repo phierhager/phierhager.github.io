@@ -2,11 +2,11 @@
 layout: page
 permalink: /teaching/
 title: teaching
-description: Materials for courses you taught. Replace this text with your description.
+description: Teaching activities
 nav: true
-nav_order: 6
+nav_order: 3
 ---
 
-For now, this page is assumed to be a static description of your courses. You can convert it to a collection similar to `_projects/` so that you can have a dedicated page for each course.
+## SS 2026 — DRL-AAS
 
-Organize your courses by years, topics, or universities, however you like!
+I teach a lab course on pricing agents in oligopoly competition, where students study how LLM-based pricing systems behave in repeated Bertrand markets. The course combines economic theory, demand modeling, algorithmic baselines, and reproducible experiments to evaluate pricing behavior, welfare, regret, and market outcomes.

@@ -7,7 +7,7 @@ subtitle: Technical University of Munich
 profile:
   align: right
   image: profile_picture.jpeg
-  image_circular: true
+  image_circular: false
   more_info: >
 
 news: true
@@ -28,6 +28,4 @@ I am a researcher at the Technical University of Munich working on optimization,
 
 ## Thesis Supervision
 
-I am open to supervising Bachelor’s and Master’s theses related to optimization, dynamical systems, learning theory, game theory, and stochastic algorithms.
-
-Possible topics include mirror descent and learning in games, variational inequalities and equilibrium computation, Lyapunov methods for algorithm analysis, stochastic approximation and online learning, and measure-valued or infinite-dimensional optimization.
+I supervise Bachelor's and Master's theses in optimization, dynamical systems, learning theory, game theory, stochastic algorithms, and formalization of mathematical methods. A list of open topics with downloadable PDF proposals is available on the [theses page]({{ '/theses/' | relative_url }}).

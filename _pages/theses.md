@@ -17,16 +17,18 @@ If you are interested in one of the topics below, please contact me with a short
 
 ## Open Thesis Proposals
 
-### Non-Euclidean Geometry and Stability of Player-Wise Mirror Learning in Games
+### Non-Euclidean Stability of Mirror Learning in Monotone Games
 
-**Level:** Master's thesis  
-**Duration:** 6 months  
-**Type:** Research thesis with theorem, counterexample, and worked examples  
+**Level:** Master's thesis
+**Duration:** 6 months
+**Type:** Research thesis with theorem, counterexample, and worked examples
 **Status:** Open
 
-This topic studies which Hilbert-space stability mechanisms for player-wise learning in games survive under non-Hilbert Banach geometry, and which fail. The thesis combines geometry-dependent stability in simple games, explicit failure modes of Euclidean proof arguments, and a positive relative-monotonicity principle.
+This thesis studies the stability of player-wise mirror learning in games, with a focus on extending the continuous-time relative-monotonicity theory of Gao and Pavel to discrete-time mirror descent. The goal is to prove a finite-dimensional Bregman Lyapunov theorem for player-wise mirror descent under explicit relative monotonicity, smoothness, and step-size assumptions, and to identify where the corresponding Euclidean or continuous-time proof arguments fail outside Hilbert geometry.
 
-[Download Proposal]({{ '/assets/pdf/thesis-proposals/non-euclidean-geometry-mirror-learning-games.pdf' | relative_url }}){: .btn .btn-sm .z-depth-0}
+The project combines one positive theorem, one explicit failure-mode theorem or counterexample, and worked examples in low-dimensional monotone or bilinear games. Particular attention will be paid to comparing Euclidean, entropy, and (\ell_p)-type mirror geometries, and to clarifying which stability mechanisms survive in non-Hilbert geometries.
+
+[Download Proposal]({{ '/assets/pdf/thesis-proposals/mirror_learning.pdf' | relative_url }}){: .btn .btn-sm .z-depth-0}
 
 ---
 

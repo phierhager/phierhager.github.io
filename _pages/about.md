@@ -28,4 +28,4 @@ I am a researcher at the Technical University of Munich working on optimization,
 
 ## Thesis Supervision
 
-I supervise Bachelor's and Master's theses in optimization, dynamical systems, learning theory, game theory, stochastic algorithms, and formalization of mathematical methods. A list of open topics with downloadable PDF proposals is available on the [Theses page]({{ '/theses/' | relative_url }}).
+If you are interested in writing a Bachelor's or Master's thesis, feel free to get in contact.

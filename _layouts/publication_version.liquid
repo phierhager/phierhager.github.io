@@ -1,0 +1,54 @@
+---
+---
+<article class="publication-version" id="version-{{ entry.key }}" aria-labelledby="version-title-{{ entry.key }}">
+  <h3 id="version-title-{{ entry.key }}">
+    {% if entry.version_label %}
+      {{ entry.version_label }}
+    {% elsif entry.type == 'article' %}
+      Journal article
+    {% elsif entry.type == 'inproceedings' %}
+      Conference paper
+    {% elsif entry.arxiv %}
+      arXiv preprint
+    {% else %}
+      Publication
+    {% endif %}
+  </h3>
+  <div class="publication-reference">{{ reference }}</div>
+
+  <div class="publication-links">
+    {% if entry.pdf %}
+      {% assign pdf_url = entry.pdf %}
+      {% unless entry.pdf contains '://' %}
+        {% assign pdf_url = entry.pdf | prepend: '/assets/pdf/' | relative_url %}
+      {% endunless %}
+      <a href="{{ pdf_url }}" class="btn btn-sm z-depth-0">PDF</a>
+    {% endif %}
+    {% if entry.arxiv %}
+      <a href="https://arxiv.org/abs/{{ entry.arxiv }}" class="btn btn-sm z-depth-0">arXiv</a>
+    {% endif %}
+    {% if entry.doi %}
+      <a href="https://doi.org/{{ entry.doi }}" class="btn btn-sm z-depth-0">DOI</a>
+    {% endif %}
+    {% if entry.code %}
+      <a href="{{ entry.code }}" class="btn btn-sm z-depth-0">Code</a>
+    {% endif %}
+    {% if entry.slides %}
+      {% assign slides_url = entry.slides %}
+      {% unless entry.slides contains '://' %}
+        {% assign slides_url = entry.slides | prepend: '/assets/pdf/' | relative_url %}
+      {% endunless %}
+      <a href="{{ slides_url }}" class="btn btn-sm z-depth-0">Slides</a>
+    {% endif %}
+  </div>
+
+  {% if entry.abstract %}
+    <h4>Abstract</h4>
+    <p class="publication-abstract">{{ entry.abstract }}</p>
+  {% endif %}
+
+  <details class="publication-citation">
+    <summary>BibTeX citation</summary>
+    <pre><code class="language-bibtex">{{ entry.bibtex | hideCustomBibtex | escape }}</code></pre>
+  </details>
+</article>

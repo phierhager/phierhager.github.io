@@ -190,6 +190,9 @@ collections:
   projects:
     output: true
     permalink: /:collection/:title/
+  publications:
+    output: true
+    permalink: /publications/:name/
 
 announcements:
   enabled: true
@@ -265,6 +268,11 @@ plugins:
 
 # Sitemap settings
 defaults:
+  - scope:
+      path: ""
+      type: publications
+    values:
+      layout: publication
   - scope:
       path: "assets"
     values:
@@ -357,10 +365,12 @@ filtered_bibtex_keywords:
     pdf,
     poster,
     preview,
+    project,
     selected,
     slides,
     supp,
     video,
+    version_label,
     website,
   ]
 

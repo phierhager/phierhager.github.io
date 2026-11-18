@@ -1,0 +1,13 @@
+---
+layout: page
+---
+<div class="publication-project">
+  <a class="publication-back" href="{{ '/publications/' | relative_url }}">&larr; All publications</a>
+
+  {{ content }}
+
+  <section class="publication-versions" aria-labelledby="project-publications">
+    <h2 id="project-publications">Publications</h2>
+    {% bibliography --query @*[project={{page.project}}] --group_by none --template publication_version %}
+  </section>
+</div>

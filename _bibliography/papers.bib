@@ -2,6 +2,8 @@
 ---
 
 @misc{bichler2026language,
+  project={language-model-price-competition},
+  version_label={arXiv preprint},
   abbr={arXiv},
   title={How language model agents reshape price competition},
   author={Bichler, Martin and Hierhager, Philip and K{\"o}ck, Kassian and Pieroth, Fabian},
@@ -13,10 +15,12 @@
   url={https://arxiv.org/abs/2610.21711},
   pdf={https://arxiv.org/pdf/2610.21711},
   selected={true},
-  abstract={This paper studies language model pricing agents in repeated Bertrand competition. Their behavior depends on deployment choices: agents using raw market histories that include rival prices can sustain supracompetitive prices in self-play, while agents using summarized histories of their own profits tend toward competitive prices. Mixed deployments can produce dynamic pricing regimes that keep both competitors' prices above marginal cost.}
+  abstract={Repeated Bertrand competition is a stringent benchmark for algorithmic pricing: in homogeneous-goods markets, standard learning procedures typically select the stage-game Nash outcome with prices near marginal cost. We show that LLM pricing agents can escape this benchmark, depending on deployment decisions. LLMs outperform standard online learners through faster adaptation, but this advantage largely disappears against full-information learners. An extracted surrogate algorithm illustrates how LLMs in specific deployments profit from regularly undercutting slower learners. Agents that post one price every period from raw market histories that include rival prices can sustain supracompetitive regimes in self-play. Agents that periodically emit probability distributions from summarized histories of their own profits instead move toward the competitive region in self-play. Markets mixing these interfaces can generate dynamic regimes in which LLMs establish a high-price anchor and regularly undercut it to capture demand. These regimes can keep both competitors' prices above marginal cost. Deployment choices shape these outcomes, shifting the focus from stationary equilibria to dynamic pricing regimes.}
 }
 
 @misc{hierhager2026liouville,
+  project={hamiltonian-scattering},
+  version_label={arXiv preprint},
   abbr={arXiv},
   title={Liouville-Preserving Hamiltonian Scattering on Finite Metric Graphs},
   author={Hierhager, Philip},
@@ -28,5 +32,5 @@
   url={https://arxiv.org/abs/2606.05973},
   pdf={https://arxiv.org/pdf/2606.05973},
   selected={true},
-  abstract={This paper studies deterministic Hamiltonian dynamics on finite metric graphs. Since energy conservation alone does not determine how a trajectory continues through a branching vertex, the paper introduces energy-preserving vertex scattering maps. The resulting edge-and-vertex dynamics define a global measurable flow that preserves energy and the quotient Liouville measure.}
+  abstract={A metric graph with a mechanical Hamiltonian on each edge does not, by itself, define a deterministic classical motion through a branching vertex: conservation of energy fixes only the outgoing speed, not the outgoing edge-end. We study the deterministic problem obtained after this missing vertex datum is supplied. On each edge \(e\), with coordinate \(q\in[0,\ell_e]\), the Hamiltonian is \(H_e(q,p)=p^2/2+V_e(q)\), where \(V\){} is continuous on the graph and \(C^2\){} on every edge. At each vertex we prescribe an energy-preserving Borel isomorphism from incoming to outgoing nonzero boundary covectors. The resulting phase space is the measurable quotient that identifies each incoming boundary covector with its prescribed outgoing one. After excluding the finitely many energy levels \(V(v)\), the edgewise Hamilton equations and the vertex laws concatenate to a global one-parameter group of bimeasurable transformations. The group preserves energy and the quotient measure induced by the edgewise Liouville measures \(dq\,dp\). The proof uses no smooth symplectic structure on the quotient; the invariance follows from ordinary edgewise Liouville invariance, a uniform no-Zeno estimate on compact regular energy windows, and preservation of the transverse Liouville flux \(r\,dr\){} by the speedwise vertex permutations. If the vertex laws are compatible with momentum reversal, then the quotient dynamics is reversible. On regular energy surfaces satisfying the usual regular-value condition, the induced time-parametrization measure is invariant as well.}
 }

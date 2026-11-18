@@ -1,0 +1,28 @@
+<figure class="project-figure" aria-labelledby="scattering-figure-caption">
+  <svg class="scattering-diagram" viewBox="0 0 600 260" role="img" aria-labelledby="scattering-title scattering-description">
+    <title id="scattering-title">A prescribed continuation at a branching vertex</title>
+    <desc id="scattering-description">
+      A particle approaches a vertex along the left edge. A scattering rule sends it along the upper right edge. Another edge leads to the lower right.
+      Energy conservation alone does not select the outgoing edge.
+    </desc>
+    <defs>
+      <marker id="scattering-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+        <path d="M 0 0 L 10 5 L 0 10 z" class="scattering-arrowhead" />
+      </marker>
+    </defs>
+    <path class="graph-edge" d="M 50 130 H 290 L 525 50 M 290 130 L 525 220" />
+    <path class="graph-motion" d="M 105 130 H 245" marker-end="url(#scattering-arrow)" />
+    <path class="graph-motion" d="M 320 120 L 465 70" marker-end="url(#scattering-arrow)" />
+    <circle class="graph-vertex" cx="290" cy="130" r="10" />
+    <text x="55" y="95">Incoming motion</text>
+    <text x="365" y="25">
+      <tspan x="365">Prescribed</tspan>
+      <tspan x="365" dy="25">continuation</tspan>
+    </text>
+    <text x="355" y="245">Another edge</text>
+    <text x="200" y="195">Vertex rule</text>
+  </svg>
+  <figcaption id="scattering-figure-caption">
+    One possible scattering rule at a branching vertex. The rule supplies a continuation that energy conservation alone does not determine.
+  </figcaption>
+</figure>

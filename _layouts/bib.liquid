@@ -47,7 +47,17 @@
   <!-- Entry bib key -->
   <div id="{{ entry.key }}" class="{% if site.enable_publication_thumbnails %}col-sm-8{% else %}col-sm-10{% endif %}">
     <!-- Title -->
-    <div class="title">{{ entry.title }}</div>
+    {% assign publication_project = null %}
+    {% if entry.project %}
+      {% assign publication_project = site.publications | where: 'project', entry.project | first %}
+    {% endif %}
+    <div class="title">
+      {% if publication_project %}
+        <a href="{{ publication_project.url | relative_url }}">{{ entry.title }}</a>
+      {% else %}
+        {{ entry.title }}
+      {% endif %}
+    </div>
     <!-- Author -->
     <div class="author">
       {% assign author_array_size = entry.author_array | size %}

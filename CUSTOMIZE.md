@@ -82,6 +82,29 @@ To add publications create a new entry in the [\_bibliography/papers.bib](_bibli
 
 You can add extra information to a publication, like a PDF file in the `assets/pdfs/` directory and add the path to the PDF file in the BibTeX entry with the `pdf` field. Some of the supported fields are: `abstract`, `altmetric`, `annotation`, `arxiv`, `bibtex_show`, `blog`, `code`, `dimensions`, `doi`, `eprint`, `html`, `isbn`, `pdf`, `pmid`, `poster`, `slides`, `supp`, `video`, and `website`.
 
+### Research project pages and publication versions
+
+Each file in `_publications/` describes one research project: the problem, a visual, and the main ideas. Its `project` front matter field is a stable identifier, and its filename determines the URL `/publications/<filename>/`.
+
+Keep bibliographic details in `_bibliography/papers.bib`. Give every publication belonging to the same project the same `project` value. The project page automatically lists all matching entries, with each entry's own citation, abstract, and links. Publication titles in the overview and on the home page link to the shared project page.
+
+For an arXiv, conference, or journal version, add a separate BibTeX record with a unique citation key and the same `project`. Use the usual record type (`@misc`, `@inproceedings`, or `@article`) and supply that version's actual `title`, `author`, `year`, `abstract`, and resource links. For example:
+
+```bibtex
+@article{example-journal-version,
+  project = {hamiltonian-scattering},
+  version_label = {Journal article},
+  title = {The title of the journal version},
+  author = {Author, First},
+  journal = {Journal name},
+  year = {2027},
+  abstract = {The abstract of this version},
+  doi = {10.example/replace-with-actual-doi}
+}
+```
+
+`version_label` is optional; labels otherwise follow the record type or arXiv field. Only add records for versions that exist. No additional project page or version page is needed. The custom `project` and `version_label` fields are omitted from exported BibTeX citations.
+
 ### Author annotation
 
 In publications, the author entry for yourself is identified by string array `scholar:last_name` and string array `scholar:first_name` in [\_config.yml](_config.yml). For example, if you have the following entry in your [\_config.yml](_config.yml):

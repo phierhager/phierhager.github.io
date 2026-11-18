@@ -1,0 +1,167 @@
+.publication-project {
+  .publication-back {
+    display: inline-block;
+    margin-bottom: 1.5rem;
+  }
+
+  h2 {
+    margin-top: 2rem;
+  }
+
+  .project-figure {
+    margin: 2rem 0;
+    padding: 1.5rem;
+    border: 1px solid var(--global-divider-color);
+    border-radius: 0.5rem;
+  }
+
+  figcaption {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+
+  .pricing-interfaces {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.5rem;
+  }
+
+  .pricing-interface {
+    text-align: center;
+
+    h3 {
+      margin-bottom: 1rem;
+      font-size: 1.1rem;
+      font-weight: 500;
+    }
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+
+  .interface-arrow {
+    display: block;
+    padding: 0.25rem;
+    color: var(--global-theme-color);
+    font-size: 1.5rem;
+  }
+
+  .interface-outcome {
+    font-weight: 500;
+  }
+
+  .scattering-diagram {
+    display: block;
+    width: 100%;
+    height: auto;
+
+    text {
+      fill: var(--global-text-color);
+      font-family: inherit;
+      font-size: 21px;
+    }
+  }
+
+  .graph-edge {
+    fill: none;
+    stroke: var(--global-text-color-light);
+    stroke-width: 3;
+  }
+
+  .graph-motion {
+    fill: none;
+    stroke: var(--global-theme-color);
+    stroke-width: 4;
+  }
+
+  .graph-vertex,
+  .scattering-arrowhead {
+    fill: var(--global-theme-color);
+  }
+
+  .publication-versions ol.bibliography {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .publication-version {
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--global-divider-color);
+    scroll-margin-top: 5rem;
+
+    h3 {
+      font-size: 1.25rem;
+    }
+
+    h4 {
+      margin-top: 1.5rem;
+      font-size: 1rem;
+      font-weight: 500;
+    }
+  }
+
+  .publication-reference {
+    overflow-wrap: anywhere;
+  }
+
+  .publication-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+
+    a.btn {
+      margin: 0;
+      padding: 0.35rem 0.75rem;
+      border: 1px solid var(--global-text-color);
+      color: var(--global-text-color);
+      text-transform: none;
+
+      &:hover,
+      &:focus-visible {
+        border-color: var(--global-theme-color);
+        color: var(--global-theme-color);
+      }
+    }
+  }
+
+  .publication-citation {
+    margin: 1rem 0 2rem;
+
+    summary {
+      cursor: pointer;
+      color: var(--global-theme-color);
+    }
+
+    pre {
+      margin-top: 0.75rem;
+      padding: 1rem;
+      white-space: pre-wrap;
+      overflow-wrap: anywhere;
+      background-color: var(--global-code-bg-color);
+    }
+  }
+
+  @media (max-width: 575.98px) {
+    .project-figure {
+      padding: 1rem;
+    }
+
+    .pricing-interfaces {
+      grid-template-columns: 1fr;
+    }
+
+    .pricing-interface + .pricing-interface {
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--global-divider-color);
+    }
+
+    .scattering-diagram text {
+      font-size: 25px;
+    }
+  }
+}

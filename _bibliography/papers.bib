@@ -2,15 +2,15 @@
 ---
 
 @unpublished{bichler2026lastiterate,
-  project={last-iterate-auction-learning},
+  project={moebius-pricing-games},
   version_label={Soon on arXiv},
   abbr={Draft},
-  title={Last-Iterate Convergence of Gradient Learning in Bayesian First-Price Auctions Beyond Monotonicity},
+  title={Last-Iterate Convergence of Payoff-Gradient Learning in Möbius Pricing Games},
   author={Bichler, Martin and Hierhager, Philip and Hoehener, Jan},
   year={2026},
   note={Soon on arXiv},
   selected={true},
-  abstract={We prove last-iterate convergence of symmetric payoff-gradient learning in Bayesian first-price auctions with a continuum of private values, although monotonicity and the Minty condition fail. We use an exactly equivalent procurement representation for the analysis. The key is an exact identity: subtracting the equilibrium turns the bid dynamics into a damped transport equation for the equilibrium error, and a comparison principle for this equation replaces monotonicity. The identity holds exactly when the winner's surplus is affine in its own price. For every number of bidders \(n\) and every value distribution with a density bounded away from zero and infinity, the dynamics have a unique global solution from every initial bid function with bounded positive slopes, and the sup-norm error decays exponentially for \(n=2\) and as \(t^{-1/(n-2)}\) for \(n\ge3\); both orders are sharp. Nonnegative bids and no overbidding fix the lowest-value bid at zero; without this constraint, it is learned for \(n=2\) and frozen for \(n\ge3\). A fixed-step grid algorithm with gradient errors \(\eta=O(1/N)\) on \(N\) cells converges geometrically to an \(O(\eta)\) neighbourhood of equilibrium in the uniform duopoly; this noise scale is necessary up to a factor of two. All numbered results are formally verified in Lean 4.}
+  abstract={We prove global last-iterate convergence of payoff-gradient learning, with explicit rates, in a class of Bayesian bidding and pricing games that includes first-price auctions, unit-demand pay-as-bid auctions, rank-based generalized first-price auctions, and homogeneous-good price competition with inelastic demand. The result holds for symmetric self-play: all players use a common strategy and apply the same payoff-gradient update at each type. Convergence is from every continuous weakly increasing feasible initial strategy, including pooling, and does not rely on the monotonicity or Minty conditions that underlie existing guarantees in other games. Instead, the class is characterized by two structural properties: a direct payoff effect that is independent of the action, and a payoff difference at the allocation threshold that is affine in the action. These properties reduce the learning dynamics to a singular transport–damping equation for the common strategy, which, under the stated coefficient and metric assumptions, admits a unique viscosity solution. Comparison barriers make the uniform distance to the unique rest point a strict Lyapunov functional and yield convergence rates with optimal algebraic exponents. In allocation games, the rest point is the unique weakly increasing symmetric equilibrium under the stated tie-breaking conditions, and a positive lower slope bound converts strategy-error bounds into explicit approximate-equilibrium guarantees. A projected grid scheme with a slope floor makes the approximation constructive, with error bounds under deterministic perturbations and almost-sure convergence on a fixed grid under martingale gradient noise.}
 }
 
 @misc{bichler2026language,

@@ -52,6 +52,36 @@
     font-weight: 500;
   }
 
+  .learning-mechanism {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    li {
+      position: relative;
+
+      + li::before {
+        position: absolute;
+        top: 0;
+        left: -1.5rem;
+        color: var(--global-theme-color);
+        content: "\2192";
+      }
+    }
+
+    h3 {
+      font-size: 1.1rem;
+      font-weight: 500;
+    }
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+
   .scattering-diagram {
     display: block;
     width: 100%;
@@ -158,6 +188,17 @@
     .pricing-interface + .pricing-interface {
       padding-top: 1.5rem;
       border-top: 1px solid var(--global-divider-color);
+    }
+
+    .learning-mechanism {
+      grid-template-columns: 1fr;
+      gap: 2.5rem;
+
+      li + li::before {
+        top: -2rem;
+        left: 0;
+        content: "\2193";
+      }
     }
 
     .scattering-diagram text {

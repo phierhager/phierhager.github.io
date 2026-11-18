@@ -105,6 +105,8 @@ For an arXiv, conference, or journal version, add a separate BibTeX record with 
 
 `version_label` is optional; labels otherwise follow the record type or arXiv field. Only add records for versions that exist. No additional project page or version page is needed. The custom `project` and `version_label` fields are omitted from exported BibTeX citations.
 
+For an upcoming paper, use `@unpublished`, set `version_label` and `note` to `Soon on arXiv`, and add its title, authors, year, and draft abstract. Add the `arxiv` and `pdf` fields once the preprint is available. Mathematical abstracts can use `\(...\)` or `\[...\]`; the bibliography preserves the enclosed TeX.
+
 ### Author annotation
 
 In publications, the author entry for yourself is identified by string array `scholar:last_name` and string array `scholar:first_name` in [\_config.yml](_config.yml). For example, if you have the following entry in your [\_config.yml](_config.yml):

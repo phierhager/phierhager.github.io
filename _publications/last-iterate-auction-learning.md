@@ -19,3 +19,7 @@ This project studies symmetric learning: all bidders start with the same bid fun
 - A fixed-step grid algorithm also has a convergence guarantee under bounded gradient errors in the uniform two-bidder setting. The draft includes a Lean 4 formalization of all numbered results.
 
 The guarantees concern the current bidding strategy, rather than an average over past strategies. Independently evolving, asymmetric bidders remain outside the scope of these results.
+
+## Upcoming presentation
+
+I will present a poster on this work at the [_Optimization in AI_ workshop](https://www.ricam.oeaw.ac.at/specsem/specsem2026/workshop4/) at RICAM in Linz, Austria, from November 23–27, 2026.
